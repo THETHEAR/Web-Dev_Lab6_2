@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function change() {
+        let t1 = document.getElementById("Text");
+        t1.style.color = "green";
+      }
+
+      function change2() {
+        let t2 = document.getElementById("Text2");
+        t2.style.color = "green";
+      }
+
+      function change3() {
+        let t3 = document.getElementById("Text3");
+        t3.style.color = "green";
+      }
+    </script>
+
+    <style>
+      .text2 {
+        width: 60px;
+      }
+      .text3 {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      Name:
+      <input type="text" id="Text" class="text1" onmouseout="change()" /><br />
+      age:
+      <input
+        type="text"
+        id="Text2"
+        class="text2"
+        onmouseout="change2()"
+      /><br />
+      Birthdate:
+      <input
+        type="text"
+        id="Text3"
+        class="text3"
+        onmouseout="change3()"
+      /><br />
+    </form>
+  </body>
+</html>
